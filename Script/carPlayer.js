@@ -26,14 +26,7 @@ var Car = function (x, y, src, speed) {
     }
 }
 const carSize = 100;
+let score= +0;
 var canvas = document.getElementById("myCanvas");
 var car = new Car(250, 500, 'Images/car.png', 3);
 
-function animation() {
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    car.move(37, 38, 40, 39);
-    car.draw(canvas);
-}
-
-setInterval(animation, 10);
