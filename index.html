@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Racing Car</title>
-
 </head>
 <script src="Script/carMove.js"></script>
 <body onload="startMove()">
 <h1 id="score">Your scores:</h1>
+<button id="btnReset" type="button" onclick="reset();">Restart</button>
 <div id="main-wrapper" style="margin: auto">
     <canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
 </div>
@@ -16,4 +16,6 @@
 <script src="Script/roadAnimation.js"></script>
 <script src="Script/carPlayer.js"></script>
 <script src="Script/carEnemy.js"></script>
+<script src="Script/collision.js"></script>
+
 </html>

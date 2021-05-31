@@ -19,6 +19,7 @@ function selectStop(evt){
     controler.key[evt.keyCode]= false;
 }
 function startMove(){
+
     window.addEventListener('keydown', selectMove);
     window.addEventListener('keyup', selectStop);
 }
