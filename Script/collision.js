@@ -14,5 +14,7 @@ function checkCollision(carEnemy, carPlay){
     var condition6= Math.pow(carEnemy.x-carPlay.x, 2)+Math.pow(carEnemy.y-carPlay.y,2) <= Math.pow(carSize, 2);
     if(condition1||condition2||condition3||condition4||condition5||condition6) {
         return true;
-    }else return false;
+    }else {
+        return false;
+    }
 }

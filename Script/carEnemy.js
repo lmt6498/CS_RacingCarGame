@@ -14,9 +14,9 @@ var carEnemy = function (x, y, src, speed) {
     carEnemy.prototype.move = function () {
         this.y += this.speed;
         if(this.y - this.carSize>= 600) {
-            this.y= -this.carSize;
+            this.y= random(-100,-20);
             this.x= random(0,600-this.carSize);
-            this.speed= random(2,4);
+            this.speed= random(3,4);
             score++;
             document.getElementById('score').innerHTML= 'Your scores:'+score;
         }
@@ -30,8 +30,10 @@ var carEnemys = [];
 function createCarEnemy(carRandom) {
 
     for (var i = 0; i < carRandom; i++) {
-        var carEnemy1 = new carEnemy(random(0, 600 - this.carSize), -20, getRandomCar(), random(2, 4));
+        var carEnemy1 = new carEnemy(random(0,600 - this.carSize), -20, getRandomCar(), random(3,4));
+        // var carEnemy2 = new carEnemy(random(350, 600 - this.carSize), -20, getRandomCar(), 5);
         this.carEnemys.push(carEnemy1);
+        // this.carEnemys.push(carEnemy2);
     }
 }
 function animation() {
