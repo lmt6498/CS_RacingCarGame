@@ -27,7 +27,7 @@ var Car = function (x, y, src, speed) {
         }
     }
 }
-let score= +0;
+let score= -4;
 var canvas = document.getElementById("myCanvas");
 var car = new Car(250, 500, 'Images/car.png', 4);
 function reset(){

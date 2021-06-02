@@ -12,11 +12,11 @@ var moveCar=function (){
     }
 }
 var controler= new moveCar();
-function selectMove(evt){
-    controler.key[evt.keyCode]= true;
+function selectMove(e){
+    controler.key[e.keyCode]= true;
 }
-function selectStop(evt){
-    controler.key[evt.keyCode]= false;
+function selectStop(e){
+    controler.key[e.keyCode]= false;
 }
 function startMove(){
 

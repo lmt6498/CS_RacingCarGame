@@ -5,7 +5,7 @@ var carEnemy = function (x, y, src, speed) {
     this.img = new Image();
     this.img.src = src;
     this.speed = speed;
-    this.carSize = 100
+    this.carSize = 100;
 
     carEnemy.prototype.draw = function (canvas) {
         var ctx = canvas.getContext("2d");
@@ -13,7 +13,7 @@ var carEnemy = function (x, y, src, speed) {
     }
     carEnemy.prototype.move = function () {
         this.y += this.speed;
-        if(this.y - this.carSize>= 600) {
+        if(this.y - this.carSize>=600) {
             this.y= random(-100,-20);
             this.x= random(0,600-this.carSize);
             this.speed= random(3,4);
