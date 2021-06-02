@@ -6,11 +6,16 @@
 </head>
 <script src="Script/carMove.js"></script>
 <body  style="background-image: url('./Images/bg1.jpg');">
-
-<button type="button" id="start"onclick="start()">Start</button>
-<p id="tutorial" style="font-weight: bold; font-size: 50px">Use Arrow Keys for control your car!!</p>
+<div align="center">
+<p id="welcome" style="font-weight: bold; font-size: 50px;">Welcome to my Racing Car Game</p>
+<p id="tutorial1" style="font-weight: bold; font-size: 50px;">Use Arrow Keys for control your car! ^.^ <br>
+Click Start Button to begin game~</p>
+<button type="button" id="start"onclick="start()" style="width: 150px; height: 50px; font-size: 30px">Start</button>
+<p id="tutorial2" style="font-weight: bold; font-size: 30px">Chúc bạn chơi game vui vẻ hông quạo! <br>
+From Akitoshi with love~ !! dấu bé ba !</p>
+</div>
 <h1 id="score">Your scores:</h1>
-<button id="btnReset" type="button" onclick="reset();">Restart</button>
+<button id="btnReset" type="button" onclick="reset();" style="width: 150px; height: 50px; font-size: 30px">Restart</button>
 <div id="main-wrapper" style="margin: auto">
 
     <canvas id="myCanvas" width="600" height="600" style="border:0px solid #000000;"></canvas>

@@ -79,11 +79,17 @@ function start(){
         increment += 2;
     }, 10);
     startMove()
-    document.getElementById("start").style.display = "none"
-    document.getElementById("btnReset").style.display = "none"
-    document.getElementById("tutorial").style.display = "none"
+    document.getElementById("start").style.display = "none";
+    document.getElementById("btnReset").style.display = "none";
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("tutorial1").style.display = "none";
+    document.getElementById("tutorial2").style.display = "none";
+    document.getElementById("score").style.display = "";
+    document.getElementById("main-wrapper").style.display = "";
 }
 
-document.getElementById("btnReset").style.display = "none"
+document.getElementById("btnReset").style.display = "none";
+document.getElementById("score").style.display = "none";
+document.getElementById("main-wrapper").style.display = "none";
 // setInterval(createCarEnemy);
 
