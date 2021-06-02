@@ -47,6 +47,7 @@ function animation() {
         if (checkCollision(carEnemys[i], car)) {
             clearInterval(interval);
             alert("Game over!");
+            document.getElementById("btnReset").style.display = ""
         }
     }
 }
@@ -71,7 +72,18 @@ function random(min, max) {
     return parseInt(Math.random() * (max - min + 1) + min);
 }
 
-createCarEnemy(4);
+function start(){
+    createCarEnemy(4);
+    setInterval(function () {
+        road.style.backgroundPosition = '0px ' + increment + 'px';
+        increment += 2;
+    }, 10);
+    startMove()
+    document.getElementById("start").style.display = "none"
+    document.getElementById("btnReset").style.display = "none"
+    document.getElementById("tutorial").style.display = "none"
+}
 
+document.getElementById("btnReset").style.display = "none"
 // setInterval(createCarEnemy);
 

@@ -5,13 +5,15 @@
     <title>Racing Car</title>
 </head>
 <script src="Script/carMove.js"></script>
-<body onload="startMove()" style="background-image: url('./Images/bg1.jpg');">
-<div class="bg">
+<body  style="background-image: url('./Images/bg1.jpg');">
+
+<button type="button" id="start"onclick="start()">Start</button>
+<p id="tutorial" style="font-weight: bold; font-size: 50px">Use Arrow Keys for control your car!!</p>
 <h1 id="score">Your scores:</h1>
 <button id="btnReset" type="button" onclick="reset();">Restart</button>
 <div id="main-wrapper" style="margin: auto">
+
     <canvas id="myCanvas" width="600" height="600" style="border:0px solid #000000;"></canvas>
-</div>
 </div>
 </body>
 <script src="Script/roadAnimation.js"></script>
